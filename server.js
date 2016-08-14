@@ -13,12 +13,12 @@ app.get('/', function(req, res) {
 
     //// make sure index is in the right directory. In this case /app/index.html
     //res.render('inde');
-  res.sendFile(__dirname+'/index.html');
+  res.sendFile(__dirname+'/public/index.html');
   console.log("index");
 });
 
 app.get('/contact', function(req,res) {
-  res.sendFile('./contactus.html');
+  res.sendFile(__dirname+'/public/contactus.html');
 });
 
 app.use(express.static(__dirname));

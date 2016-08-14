@@ -10,10 +10,9 @@ var port = process.env.PORT || 8080;
 
 // set the home page route
 app.get('/', function(req, res) {
-
     //// make sure index is in the right directory. In this case /app/index.html
     //res.render('inde');
-  res.sendFile(__dirname+'/public/index.html');
+  res.sendFile(__dirname+'/index.html');
   console.log("index");
 });
 

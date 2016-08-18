@@ -11,22 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
-var hero_detail_component_1 = require('./hero-detail.component');
 var app_component_1 = require('./app.component');
-var heroes_component_1 = require('./heroes.component');
-var my_component_1 = require('./my.component');
+var app_routing_1 = require('./app.routing');
+//import { CatComponent } from './cat/cat.component'
+//import { DogComponent } from './dog/dog.component'
+//import { ProfileComponent } from './profile/profile.component';
+var login_component_1 = require('./login/login.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                forms_1.FormsModule,
+                app_routing_1.routing
             ],
             declarations: [app_component_1.AppComponent,
-                hero_detail_component_1.HeroDetailComponent,
-                heroes_component_1.HeroesComponent,
-                my_component_1.MyComponent
+                login_component_1.LoginComponent
+            ],
+            providers: [
+                app_routing_1.appRoutingProviders
             ],
             bootstrap: [app_component_1.AppComponent
             ]

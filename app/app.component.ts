@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @Component({
   selector: 'my-app',
-  template: `
-        <my-heroes></my-heroes>
-        <my-name></my-name>
-    `
+  templateUrl: 'app/template/app.component.html'
 })
 
 export class AppComponent { 

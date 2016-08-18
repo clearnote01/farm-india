@@ -1,17 +1,27 @@
 "use strict";
 var router_1 = require('@angular/router');
-var heroes_component_1 = require('./heroes.component');
+//import { DogComponent } from './dog/dog.component';
+//import { CatComponent } from './cat/cat.component';
+//import { ProfileComponent } from './profile/profile.component';
+var login_component_1 = require('./login/login.component');
+var signup_component_1 = require('./signup/signup.component');
 var appRoutes = [
+    //{
+    //path: 'dog', component: CatComponent
+    //},
+    //{
+    //path: 'cat', component: DogComponent
+    //},
+    //{
+    //path: 'profile', component: ProfileComponent
+    //},
     {
-        path: 'heroes',
-        component: heroes_component_1.HeroesComponent
+        path: 'login', component: login_component_1.LoginComponent
+    },
+    {
+        path: 'signup', component: signup_component_1.SignupComponent
     }
 ];
-var appRoutes = [
-    {
-        path: 'heroes',
-        component: heroes_component_1.HeroesComponent
-    }
-];
-exports.routing = router_1.RouterModule.forRoot(appRoute);
+exports.appRoutingProviders = [];
+exports.routing = router_1.RouterModule.forRoot(appRoutes);
 //# sourceMappingURL=app.routing.js.map

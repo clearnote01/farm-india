@@ -1,19 +1,24 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail.component';
 import { AppComponent }  from './app.component';
-import { HeroesComponent } from './heroes.component';
-import { MyComponent } from './my.component';
+import { routing, appRoutingProviders } from './app.routing';
+//import { CatComponent } from './cat/cat.component'
+//import { DogComponent } from './dog/dog.component'
+//import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,
-                  FormsModule
+                  FormsModule,
+                  routing
             ],
   declarations: [ AppComponent,
-                  HeroDetailComponent,
-                  HeroesComponent,
-                  MyComponent
+                    LoginComponent
+            ],
+  providers: [
+      appRoutingProviders
             ],
   bootstrap:    [ AppComponent
             ]

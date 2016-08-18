@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 
+
 const appRoutes: Routes = [
     //{
         //path: 'dog', component: CatComponent

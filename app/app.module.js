@@ -17,6 +17,7 @@ var app_routing_1 = require('./app.routing');
 //import { DogComponent } from './dog/dog.component'
 //import { ProfileComponent } from './profile/profile.component';
 var login_component_1 = require('./login/login.component');
+var signup_component_1 = require('./signup/signup.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ var AppModule = (function () {
                 app_routing_1.routing
             ],
             declarations: [app_component_1.AppComponent,
-                login_component_1.LoginComponent
+                login_component_1.LoginComponent,
+                signup_component_1.SignupComponent
             ],
             providers: [
                 app_routing_1.appRoutingProviders

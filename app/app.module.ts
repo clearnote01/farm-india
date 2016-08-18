@@ -7,6 +7,7 @@ import { routing, appRoutingProviders } from './app.routing';
 //import { DogComponent } from './dog/dog.component'
 //import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
                   routing
             ],
   declarations: [ AppComponent,
-                    LoginComponent
+                    LoginComponent,
+                    SignupComponent
             ],
   providers: [
       appRoutingProviders

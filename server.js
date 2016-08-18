@@ -34,6 +34,9 @@ app.get('/signin', function(req,res) {
   res.sendFile(__dirname+'/signup.html');
 });
 
+app.get('/new_route', function(req,res) {
+  res.sendFile(__dirname+'/signup.html');
+});
 app.post('/signup', urlEncodedParser, function(req, res) {
   if (! req.body) return res.sendStatus(400);
   let f_uname = req.body.f_uname;

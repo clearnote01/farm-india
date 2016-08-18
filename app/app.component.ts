@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { MdCardModule } from '@angular2-material/card';
+import { MdButtonModule } from '@angular2-material/button';
+import { MaterialAppComponent } from './material.component';
 
 @Component({
   selector: 'my-app',
   template: `
-        <my-heroes></my-heroes>
-        <my-name></my-name>
+        <material-app></material-app>
     `
 })
 

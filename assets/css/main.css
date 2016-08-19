@@ -2793,8 +2793,8 @@
 	}
 
 
-	.sticky {
-	  	background-color: black;
+#header {
+		background: #444;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -2804,20 +2804,8 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
-	}
-
-
-	#header {
-		background: #444;
-		color: #bbb;
-		cursor: default;
-		height: 3.25em;
-		left: 0;
-		line-height: 3.25em;
-		position: sticky;
-		top: 0;
-		width: 100%;
-		z-index: 10000;
+		font-family: 'Hind', sans-serif;
+		opacity: 0.5;
 	}
 
 		#header h1 {
@@ -2827,7 +2815,7 @@
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
-			position: fixed;
+			position: absolute;
 			top: 0;
 		}
 
@@ -2840,11 +2828,10 @@
 		#header nav {
 			height: inherit;
 			line-height: inherit;
-			position: fixed;
+			position: absolute;
 			right: 0.75em;
 			top: 0;
 			vertical-align: middle;
-			background-color: black 0.5;
 		}
 
 			#header nav > ul {

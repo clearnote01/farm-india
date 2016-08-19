@@ -8,7 +8,8 @@
     'app':                        'app', // 'dist',
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    '@angular2-material':	  'node_modules/@angular2-material'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
@@ -28,6 +29,43 @@
     'router-deprecated',
     'upgrade',
   ];
+ 
+ /* var materialPkgs = [
+    'core',
+    'button',
+    'card',
+    'toolbar',
+    'progress-bar'
+ ];*/
+
+var materialPkgs = [
+  'core',
+  'button',
+  'card',
+  'checkbox',
+  'grid-list',
+  'icon',
+  'input',
+  'list',
+  'menu',
+  'progress-bar',
+  'progress-circle',
+  'radio',
+  'sidenav',
+  'slider',
+  'slide-toggle',
+  'button-toggle',
+  'tabs',
+  'toolbar',
+  'tooltip'];
+
+
+ materialPkgs.forEach(function (pkg) {
+     packages[("@angular2-material/" + pkg)] = { main: pkg + ".js" };
+ });
+//# sourceMappingURL=conver.js.map
+
+
   // Individual files (~300 requests):
   function packIndex(pkgName) {
     packages['@angular/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };

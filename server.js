@@ -42,10 +42,8 @@ app.post('/signup', urlEncodedParser, function(req, res) {
   let f_uname = req.body.f_uname;
   let f_passwd = req.body.f_passwd;
   let f_location = req.body.f_location;
-  let f_phone = req.body.f_phone;
-  let f_occupation = req.body.f_occupation;
   var new_user = new profile({
-    name: f_uname,
+    name: f_email,
     password: f_passwd,
     village: f_location,
     occupation: f_occupation,

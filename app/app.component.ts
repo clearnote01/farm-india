@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { MdCardModule } from '@angular2-material/card';
-import { MdButtonModule } from '@angular2-material/button';
-import { MaterialAppComponent } from './material.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @Component({
   selector: 'my-app',
-  template: `
-        <material-app></material-app>
-    `
+  templateUrl: 'app/template/app.component.html'
 })
 
 export class AppComponent { 

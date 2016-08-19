@@ -12,17 +12,14 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
-<<<<<<< HEAD
 var app_routing_1 = require('./app.routing');
 var cat_component_1 = require('./cat/cat.component');
 var dog_component_1 = require('./dog/dog.component');
 var profile_component_1 = require('./profile/profile.component');
 var login_component_1 = require('./login/login.component');
 //import { SignupComponent } from './signup/signup.component';
-=======
-var heroes_component_1 = require('./heroes.component');
+var hero_component_1 = require('./hero.component');
 var material_component_1 = require('./material.component');
-var my_component_1 = require('./my.component');
 var card_1 = require('@angular2-material/card');
 var button_1 = require('@angular2-material/button');
 var toolbar_1 = require('@angular2-material/toolbar');
@@ -45,7 +42,6 @@ var tabs_1 = require('@angular2-material/tabs');
 //import {OverlayModule} from '@angular2-material/core/overlay/overlay-directives';
 //import {MdMenuModule} from '@angular2-material/menu/menu';
 //import {RtlModule} from '@angular2-material/core/rtl/dir';
->>>>>>> 5ace3dfed57080015e4cbf8e593a99e4db829d9b
 var AppModule = (function () {
     function AppModule() {
     }
@@ -53,35 +49,21 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-<<<<<<< HEAD
                 app_routing_1.routing
             ],
-            declarations: [app_component_1.AppComponent,
-                login_component_1.LoginComponent,
-                //SignupComponent,
-                cat_component_1.CatComponent,
-                dog_component_1.DogComponent,
-                profile_component_1.ProfileComponent],
+            declarations: [app_component_1.AppComponent, login_component_1.LoginComponent,
+                cat_component_1.CatComponent, dog_component_1.DogComponent,
+                hero_component_1.HeroComponent, profile_component_1.ProfileComponent,
+                button_1.MdButtonModule, card_1.MdCardModule, toolbar_1.MdToolbarModule,
+                progress_bar_1.MdProgressBarModule, input_1.MdInputModule, radio_1.MdRadioModule, sidenav_1.MdSidenavModule,
+                list_1.MdListModule, checkbox_1.MdCheckboxModule, progress_circle_1.MdProgressCircleModule,
+                tabs_1.MdTabsModule, icon_1.MdIconModule, grid_list_1.MdGridListModule, button_toggle_1.MdButtonToggleModule,
+                material_component_1.MaterialAppComponent
+            ],
             providers: [
                 app_routing_1.appRoutingProviders
-=======
-                button_1.MdButtonModule, card_1.MdCardModule, toolbar_1.MdToolbarModule,
-                progress_bar_1.MdProgressBarModule,
-                input_1.MdInputModule, radio_1.MdRadioModule, sidenav_1.MdSidenavModule,
-                list_1.MdListModule, checkbox_1.MdCheckboxModule, progress_circle_1.MdProgressCircleModule,
-                // MdTooltipModule, 
-                tabs_1.MdTabsModule,
-                icon_1.MdIconModule, grid_list_1.MdGridListModule, button_toggle_1.MdButtonToggleModule, checkbox_1.MdCheckboxModule
             ],
-            declarations: [app_component_1.AppComponent,
-                hero_detail_component_1.HeroDetailComponent,
-                heroes_component_1.HeroesComponent,
-                my_component_1.MyComponent,
-                material_component_1.MaterialAppComponent
->>>>>>> 5ace3dfed57080015e4cbf8e593a99e4db829d9b
-            ],
-            bootstrap: [app_component_1.AppComponent
-            ]
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

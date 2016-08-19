@@ -9,9 +9,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 //import { SignupComponent } from './signup/signup.component';
 
-import { HeroesComponent } from './heroes.component';
+import { HeroComponent } from './hero.component';
 import { MaterialAppComponent } from './material.component';
-import { MyComponent } from './my.component';
 
 import { MdCardModule } from '@angular2-material/card';
 import { MdButtonModule } from '@angular2-material/button';
@@ -47,31 +46,19 @@ import {MdTabsModule} from '@angular2-material/tabs';
                   FormsModule,
                   routing
             ],
-  declarations: [ AppComponent,
-                    LoginComponent,
-                    //SignupComponent,
-                    CatComponent,
-                    DogComponent,
-                    ProfileComponent ],
-  providers: [
-      appRoutingProviders,
-                  FormsModule, 
-                   MdButtonModule, MdCardModule, MdToolbarModule, 
-                   MdProgressBarModule, 
-                  MdInputModule, MdRadioModule, MdSidenavModule, 
+  declarations: [ AppComponent, LoginComponent,
+                  CatComponent, DogComponent,
+                  HeroComponent, ProfileComponent,
+                  MdButtonModule, MdCardModule, MdToolbarModule, 
+                  MdProgressBarModule, MdInputModule, MdRadioModule, MdSidenavModule, 
                   MdListModule, MdCheckboxModule, MdProgressCircleModule,
-                   // MdTooltipModule, 
-                   MdTabsModule,
-                  MdIconModule, MdGridListModule, MdButtonToggleModule, MdCheckboxModule
-            ],
-  declarations: [ AppComponent,
-                  HeroDetailComponent,
-                  HeroesComponent,
-                  MyComponent,
+                  MdTabsModule, MdIconModule, MdGridListModule, MdButtonToggleModule,
                   MaterialAppComponent
             ],
-  bootstrap:    [ AppComponent
-            ]
+  providers: [
+                  appRoutingProviders
+            ],
+  bootstrap:    [AppComponent]
 })
 
 export class AppModule { }

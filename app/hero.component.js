@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var HeroComponent = (function () {
+    function HeroComponent() {
         this.title = 'Fire banding';
     }
-    AppComponent = __decorate([
+    HeroComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <material-app></material-app>\n    "
+            templateUrl: 'app/template/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], HeroComponent);
+    return HeroComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HeroComponent = HeroComponent;
+//# sourceMappingURL=hero.component.js.map

@@ -18,6 +18,32 @@ var MaterialAppComponent = (function () {
             { name: 'French fries', rating: 'Pretty good' },
         ];
         this.progress = 0;
+        this.formShowing = true;
+        this.views = [
+            {
+                name: "My Account",
+                description: "Edit my account information",
+                icon: "assignment ind"
+            },
+            {
+                name: "Potential dates",
+                description: "Find your soulmate!",
+                icon: "pets"
+            },
+            {
+                name: "Uttu",
+                description: "Prerna",
+                icon: "face",
+            }
+        ];
+        this.dogs = [
+            { name: "Porter" },
+            { name: "Mal" },
+            { name: "Razzle" },
+            { name: "Koby" },
+            { name: "Molly" },
+            { name: "Husi" }
+        ];
         // Update the value for the progress-bar on an interval.
         setInterval(function () {
             _this.progress = (_this.progress + Math.floor(Math.random() * 4) + 1) % 100;

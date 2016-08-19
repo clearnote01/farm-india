@@ -44,7 +44,7 @@ import {MdTabsModule} from '@angular2-material/tabs';
                   MdInputModule, MdRadioModule, MdSidenavModule, 
                   MdListModule, MdCheckboxModule, MdProgressCircleModule,
                    // MdTooltipModule, 
-                   MdTabsModule,
+                   MdTabsModule, //MdMenuModule,
                   MdIconModule, MdGridListModule, MdButtonToggleModule, MdCheckboxModule
             ],
   declarations: [ AppComponent,

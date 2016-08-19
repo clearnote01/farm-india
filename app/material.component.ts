@@ -7,6 +7,8 @@ import {Component} from '@angular/core';
   templateUrl: 'material.component.html',
   styleUrls: ['material.component.css']
 })
+
+
 export class MaterialAppComponent {
   foods: any[] = [
     {name: 'Pizza', rating: 'Excellent'},
@@ -22,4 +24,34 @@ export class MaterialAppComponent {
       this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
     }, 200);
   }
+
+  formShowing: boolean = true;
+
+  views: Object[] = [
+    {
+      name: "My Account",
+      description: "Edit my account information",
+      icon: "assignment ind"
+    },
+    {
+      name: "Potential dates",
+      description: "Find your soulmate!",
+      icon: "pets"
+    },
+    {
+      name: "Uttu",
+      description: "Prerna",
+      icon: "face",
+    }
+  ];
+  
+  dogs: Object[] = [
+    {name: "Porter"},
+    {name: "Mal"},
+    {name: "Razzle"},
+    {name: "Koby"},
+    {name: "Molly"},
+    {name: "Husi"}
+  ];
 }
+

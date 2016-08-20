@@ -114,6 +114,44 @@
     </md-card>
     </div>
 
+
+    <div class="card-container">
+    <md-card *ngFor="let dog of dogs">
+      <img md-card-image [alt]="dog.name" src="https://material.angularjs.org/material2_assets/ngconf/{{dog.name}}.png">
+      <md-card-title>Crop Name</md-card-title>
+       <h3 md-subheader>Description:</h3>
+
+      <md-card-content class="secondary">
+       <br/>Type: <br/> Amount(kgs): <br/> Location: <br/> Estimated price/kg:  <br/> Selling mandi: <br/>
+      </md-card-content>
+      Active Bids :
+
+      <md-list>
+       <h3 md-subheader>Transporter</h3>
+       <md-list-item *ngFor="let folder of folders">
+          <md-icon md-list-avatar>folder</md-icon>
+          <h4 md-line>{{folder.name}}</h4>
+          <p md-line class="demo-2"> {{folder.updated}} </p>
+       </md-list-item>
+       <md-divider></md-divider>
+       <h3 md-subheader>Buyer</h3>
+       <md-list-item *ngFor="let note of notes">
+          <md-icon md-list-avatar>note</md-icon>
+          <h4 md-line>{{note.name}}</h4>
+          <p md-line class="demo-2"> {{note.updated}} </p>
+         </md-list-item>
+        </md-list>
+
+      <md-card-actions align="end">
+        <button md-button color="primary">Bid</button>
+        <button md-button color="primary">Know More</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+
+
+
   <div align="center">
     <md-card class="button-box" align="center">
       <button md-button>FLAT</button>
